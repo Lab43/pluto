@@ -1,0 +1,25 @@
+
+; Theme Info
+name = Pluto
+description = A heavily personalized, shamelessly derivative, and delightfully minimal html5 Drupal base theme.
+core = 7.x
+engine = phptemplate
+
+; Stylesheets
+stylesheets[all][] = css/style.less
+
+; Scripts
+scripts[] = js/libs/modernizr-2.5.3.min.js
+scripts[] = js/script.js
+
+; Regions
+regions[header] = Header
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer] = Footer
+
+; Options
+features[] = favicon
+
+; Additional Options

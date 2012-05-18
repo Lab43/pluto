@@ -1,0 +1,44 @@
+// =========
+// Variables
+// =========
+
+@primary-text-color: #222; // body text
+@secondary-text-color: #222; // headings
+
+@link-color: #00e;
+@link-color-visited: #551a8b;
+@link-color-hover: #06e;
+
+@select-color: #fe57a1;
+@select-text-color: #fff;
+
+
+
+
+// ====================
+// Imported Stylesheets
+// ====================
+
+// clearfix, image replacement, and mixins
+@import "_helpers.less";
+
+// Typography and reset (includes most of HTML Boilerplate)
+@import "_base.less";
+
+// layout
+@import "_layout.less";
+
+// fields, in node pages and views
+@import "_fields.less";
+// if a field's display needs to be overridden, it should be done at the node or block level
+
+// general styles for pages, according to content type or other categorization
+@import "_pages-general.less";
+@import "_pages-custom.less"; // overrides for specific pages
+
+// general & reusables styles for blocks
+@import "_blocks-general.less";
+@import "_blocks-custom.less"; // overrides for specific blocks
+
+// print styles
+@import "_print.less";
