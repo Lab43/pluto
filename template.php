@@ -1,5 +1,18 @@
 <?php
 
+# Change the default meta content-type tag to the shorter HTML5 version
+function boron_html_head_alter(&$head_elements) {
+  $head_elements['system_meta_content_type']['#attributes'] = array(
+    'charset' => 'utf-8'
+  );
+}
+
+# Changes the search form to use the HTML5 "search" input attribute
+function boron_preprocess_search_block_form(&$vars) {
+  $vars['search_form'] = str_replace('type="text"', 'type="search"', $vars['search_form']);
+}
+
+
 function pluto_preprocess_html(&$vars) {
 
   # Force ie to use latest rendering engine, or Chrome Frame
