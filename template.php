@@ -39,4 +39,10 @@ function pluto_preprocess_html(&$vars) {
   
 }
 
+
+# Wrap menus in nav elements
+function pluto_menu_tree($variables) {
+  return '<nav class="menu"><ul>' . $variables['tree'] . '</ul></nav>';
+}
+
 ?>
