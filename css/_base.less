@@ -213,11 +213,20 @@ ul, ol {
 dd {
   margin: 0 0 0 40px;
 }
-nav ul, nav ol {
-  list-style: none;
-  list-style-image: none;
-  margin: 0;
-  padding: 0;
+/* this is a little different than the html5
+   Boilerplate because we have to override
+   Drupal's default menu styling          */
+nav {
+  ul, ol {
+    margin: 0;
+    padding: 0;
+  }
+  li.leaf, li.expanded {
+    margin: 0;
+    margin: 0;
+    list-style: none;
+    list-style-image: none;
+  }
 }
 
 
