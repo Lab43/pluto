@@ -1,0 +1,58 @@
+/*
+This stylesheet is only used within
+the wysiwyg editor, assuming the wysiwyg
+editor has been configured to use it. 
+These styles will need to be repeated in 
+another stylesheet (such as _pages-general.less)
+in order for them to affect the site. */
+
+body {
+  font-family: sans-serif;
+}
+
+.img-left,
+.img-right,
+.clearix {
+  border: 2px solid #999;
+  position: relative;
+}
+
+.img-left:after,
+.img-right:after,
+.clearix:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 2px;
+  font-size: 8px;
+  color: #fff;
+  background: #999;
+}
+
+.img-left {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+  .img-left:after {
+    content: 'image left';
+  }
+
+.img-right {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+  .img-right:after {
+    content: 'image-left';
+  }
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
