@@ -30,9 +30,9 @@
   text-align: left; 
   direction: ltr; 
   *line-height: 0; 
-}
-.ir br {
-  display: none;
+  br {
+    display: none;
+  }
 }
 
 // Hide from both screenreaders and browsers: h5bp.com/u
@@ -70,14 +70,14 @@
 }
 
 // Contain floats: h5bp.com/q
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
 .clearfix {
   *zoom: 1;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
 }
