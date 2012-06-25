@@ -73,7 +73,7 @@
     <?php print render($page['header']); ?>
   </header>
   
-  <div id="main-wrapper">
+  <div id="main-wrapper" class="clearfix">
    
     <div id="main" role="main">
       <?php if ($breadcrumb): ?>
