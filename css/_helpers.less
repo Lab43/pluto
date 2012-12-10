@@ -1,17 +1,9 @@
-// =======
-// Helpers
-// =======
+// ================================
+// HELPERS
+// - helper classes
+// - LESS mixins
+// ================================
 
-/* Contents:
-    - css3 mixins
-    - helper classes (clearfix, hidden, etc)
-*/
-
-
-
-// ===========
-// css3 mixins
-// ===========
 
 
 
@@ -80,4 +72,62 @@
   &:after {
     clear: both;
   }
+}
+
+
+
+
+// ===========
+// CSS3 mixins
+// ===========
+
+.transition (@transition) {
+  -webkit-transition: @transition;
+     -moz-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+.box-shadow (@shadow) {
+  -webkit-box-shadow: @shadow;
+     -moz-box-shadow: @shadow;
+          box-shadow: @shadow;
+}
+.background-size (@size) {
+  -webkit-background-size: @size;
+     -moz-background-size: @size;
+       -o-background-size: @size;
+          background-size: @size;
+}
+.box-sizing (@model) { 
+  -webkit-box-sizing: @model;
+     -moz-box-sizing: @model;
+          box-sizing: @model;
+}
+.border-radius (@radius) {
+  -webkit-border-radius: @radius;
+          border-radius: @radius;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+.opacity (@opacity) {
+  -webkit-opacity: @opacity;
+     -moz-opacity: @opacity;
+          opacity: @opacity;
+}
+.vertical-gradient (@startColor, @endColor) {
+  background-color: @startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(top, @startColor, @endColor);
+  background: -moz-linear-gradient(top, @startColor, @endColor);
+  background: -ms-linear-gradient(top, @startColor, @endColor);
+  background: -o-linear-gradient(top, @startColor, @endColor);
+}
+.horizontal-gradient (@startColor, @endColor) {
+  background-color: @startColor;
+  background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
+  background-image: -webkit-linear-gradient(left, @startColor, @endColor);
+  background-image: -moz-linear-gradient(left, @startColor, @endColor);
+  background-image: -ms-linear-gradient(left, @startColor, @endColor);
+  background-image: -o-linear-gradient(left, @startColor, @endColor);
 }

@@ -1,0 +1,172 @@
+// ================================
+// TYPOGRAPHY
+// ================================
+
+
+
+
+// ====================
+// always-on typography
+// ====================
+
+html, button, input, select, textarea {
+  font-family: sans-serif;
+  color: @primary-text-color;
+}
+
+body {
+  font-size: 14px;
+}
+
+// links
+a {
+  color: @link-color;
+}
+a:visited {
+  color: @link-color-visited;
+}
+a:hover {
+  color: @link-color-hover;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+// headers
+h1, h2, h3, h4, h5, h6 {
+  color:  @secondary-text-color;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+// highlight color
+::-moz-selection {
+  background: @select-color;
+  color: @select-text-color;
+  text-shadow: none;
+}
+::selection {
+  background: @select-color;
+  color: @select-text-color;
+  text-shadow: none;
+}
+
+// horizontal rule
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0; padding: 0;
+}
+
+// code
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre { // Improve readability of pre-formatted text in all browsers
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+sub, sup { // Position subscript and superscript content without affecting line-height: h5bp.com/k
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+// other
+b, strong {
+  font-weight: bold;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+dfn {
+  font-style: italic;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+// end of always-on typography
+
+
+
+
+// =================
+// opt-in typography
+// =================
+
+.text,
+.content,
+.node {
+
+  // headings
+  h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+  }
+  h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+  }
+  h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+  }
+  h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+  }
+  h6 {
+    font-size: 0.75em;
+    margin: 2.33em 0;
+  }
+
+  // lists
+  ul, ol {
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+  }
+  dd {
+    margin: 0 0 0 40px;
+  }
+
+  // other
+  blockquote {
+    margin: 1em 40px;
+  }
+  ins {
+    background: #ff9;
+    color: #000;
+    text-decoration: none;
+  }
+  mark {
+    background: #ff0;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+  }
+  q {
+    quotes: none;
+  }
+  q:before, q:after {
+    content: "";
+    content: none; 
+  }
+  small {
+    font-size: 85%;
+  }
+
+} // end of opt-in typography

@@ -9,7 +9,7 @@
 @link-color-visited: #551a8b;
 @link-color-hover: #06e;
 
-@select-color: #fe57a1;
+@select-color: #79bfef;
 @select-text-color: #fff;
 
 
@@ -19,16 +19,16 @@
 // Imported Stylesheets
 // ====================
 
-// clearfix, image replacement, and mixins
+// helper class (clearfix, etc) and CSS3 mixins
 @import "_helpers.less";
 
-// Typography and reset (includes most of HTML Boilerplate)
-@import "_base.less";
+// clear default styles and add various optimizations
+@import "_reset.less";
 
-// Admin elements
-@import "_admin.less";
+// always-on and opt-in typography
+@import "_typography.less";
 
-// layout
+// general page structure
 @import "_layout.less";
 
 // fields, in node pages and views
