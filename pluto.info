@@ -10,7 +10,7 @@ stylesheets[all][] = css/style.less
 
 ; Scripts
 scripts[] = js/libs/modernizr-2.5.3.min.js
-scripts[] = js/script.js
+scripts[] = js/scripts.js
 
 ; Regions
 regions[header] = Header
