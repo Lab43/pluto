@@ -7,8 +7,8 @@ Pluto is designed to work with my particular coding style, and for the particula
 ##Some Features
 - [Modernizr](http://modernizr.com/) built in.
 - Wherever possible, Pluto uses the [HTML5 Boilerplate](http://html5boilerplate.com/).
-- LESS for css (you will need to install [a module](http://drupal.org/project/less) to make this work)
-- 3 column layout
+- LESS for css (you will need to install [a module](http://drupal.org/project/less) to make this work).
+- 3 column layout (The regions are there, but you have to add css).
 
 ##To Do
 - Screenshot
