@@ -72,9 +72,9 @@
   <header id="header" role="banner">
     <?php print render($page['header']); ?>
   </header>
-  
+
   <div id="main-wrapper" class="clearfix">
-   
+
     <div id="main" role="main">
       <?php if ($breadcrumb): ?>
         <div id="breadcrumb"><?php print $breadcrumb; ?></div>
@@ -94,24 +94,24 @@
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div>
-    
-    
+
+
     <?php if ($page['sidebar_first']): ?>
       <aside id="sidebar-first" role="complementary">
         <?php print render($page['sidebar_first']); ?>
       </aside>
     <?php endif; ?>
-    
+
     <?php if ($page['sidebar_second']): ?>
       <aside id="sidebar-second" role="complementary">
         <?php print render($page['sidebar_second']); ?>
       </aside>
     <?php endif; ?>
-  
+
   </div> <!-- #main-wrapper -->
-  
+
   <footer id="footer" role="contentinfo">
     <?php print render($page['footer']); ?>
   </footer>
-  
+
 </div> <!-- #page -->
