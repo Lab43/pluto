@@ -11,6 +11,7 @@ Pluto is designed to work with my particular coding style, and for the particula
 - 3 column layout (The regions are there, but you have to add css).
 
 ##To Do
+- define list styles in contextual/fields.less/.field-name-body
 - Screenshot
 - logo
 - breadcrumbs

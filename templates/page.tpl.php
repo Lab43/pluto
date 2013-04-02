@@ -95,7 +95,6 @@
       <?php print $feed_icons; ?>
     </div>
 
-
     <?php if ($page['sidebar_first']): ?>
       <aside id="sidebar-first" role="complementary">
         <?php print render($page['sidebar_first']); ?>

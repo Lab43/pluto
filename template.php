@@ -25,7 +25,7 @@ function pluto_preprocess_html(&$vars) {
     )
   );
   drupal_add_html_head($meta_ie_render_engine, 'meta_ie_render_engine');
-
+  
   # mobile viewport
   $meta_viewport = array(
     '#type' => 'html_tag',
@@ -36,7 +36,7 @@ function pluto_preprocess_html(&$vars) {
     )
   );
   drupal_add_html_head($meta_viewport, 'meta_viewport');
-
+  
 }
 
 
