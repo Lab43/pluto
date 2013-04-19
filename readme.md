@@ -15,6 +15,7 @@ Pluto is designed to work with my particular coding style, and for the particula
 - Screenshot
 - logo
 - breadcrumbs
+- consider adding [shame.less file](http://csswizardry.com/2013/04/shame-css/)
 
 ##Required Modules
 - [LESS CSS Preprocessor](http://drupal.org/project/less)
