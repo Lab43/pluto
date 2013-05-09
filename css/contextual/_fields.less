@@ -15,6 +15,10 @@ If a field needs to be styled differently depending on what page type it appears
 // we define much of the typography only within the context of fields that need this sort of typographic treatment, rather than defining it globally. When you define typographic styles globally (especially margins wrapping elements like paragraphs and lists) they very frequently need to be overridden for stuff like menus.
 .field-name-body {
 
+  h2, h3, h4, h5, h6, p, ul, ol, dl {
+    margin: 1em 0;
+  }
+
   // headings
   h2 {
     font-size: 1.5em;
@@ -34,7 +38,6 @@ If a field needs to be styled differently depending on what page type it appears
 
   // lists
   ul, ol {
-    margin: 1em 0;
     padding: 0 0 0 40px;
   }
   dd {
