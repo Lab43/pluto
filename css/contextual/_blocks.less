@@ -16,7 +16,7 @@ For example:
   }
 }
 
-With this example we are redefining the font sizes for the Title and Date fields within the context of a specific view. Presumably we originally defined these fields in contextual/fields.less. It's very important that we wrap these override styles in the .events-list-view context so that they don't bleed into other parts of the website. In this example, .event-list-view is a class that was added to a specific views block.
+With this example we are redefining the font sizes for the Title and Date fields within the context of a specific view. Presumably we originally defined these fields in contextual/_fields.less. It's very important that we wrap these override styles in the .events-list-view context so that they don't bleed into other parts of the website. In this example, .event-list-view is a class that was added to a specific views block.
 
 
 It's possible to reuse block contexts. For example, the class .featured-block could be added to any block you want to make prominent. Then you could do this:

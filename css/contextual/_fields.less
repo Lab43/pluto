@@ -7,7 +7,7 @@ Styles that only apply to specific fields, or within specific fields.
 
 Drupal has a consistent pattern for classes it adds to fields. Suppose you have a field called Preview Image. Whenever that field appears in a rendered node it is given the class .field-name-field-preview-image. Whenever it appears within a view it is given the class .views-field-field-preview-image. These are the classes you should use to control its styling.
 
-If a field needs to be styled differently depending on what page type it appears on, or what view it appears in, you should style it within the context of that page or view (see contextual/pages.less and contextual/blocks.less).
+If a field needs to be styled differently depending on what page type it appears on, or what view it appears within, you should style it within the context of that page or view (see contextual/_pages.less and contextual/_blocks.less).
 
 ==================================================*/
 
@@ -40,12 +40,17 @@ If a field needs to be styled differently depending on what page type it appears
   dd {
     margin: 0 0 0 40px;
   }
+  ul {
+    list-style-type: disc;
+  }
+  ol {
+    list-style-type: decimal;
+  }
 
   // other
   blockquote {
     margin: 1em 40px;
   }
-  /*
   q {
     quotes: none;
   }
@@ -53,5 +58,4 @@ If a field needs to be styled differently depending on what page type it appears
     content: "";
     content: none;
   }
-  */
 }

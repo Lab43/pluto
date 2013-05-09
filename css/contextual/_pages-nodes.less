@@ -2,7 +2,7 @@
 
 PAGE CONTEXTS
 
-Styles that only apply within specific pages, page type, or node types.
+Styles that only apply within specific pages, page types, or node types.
 
 Page contexts can be established in several ways. In general, we are using a class from the body tag to define the context.
 - by content type (example: .node-type-article)
@@ -24,7 +24,7 @@ Here's an example:
 
 NODE CONTEXTS
 
-When Pluto renders a node, it wraps it with article element with a class of .node-[content type]. There may be several nodes on a page. For example, a blog might have a view that renders complete nodes for the 5 most recent posts. For this reason, it's often more useful to use the node class (article.node-blog-post) instead of the page class (body.node-type-blog-post). This will not, however, allow you to styles elements outside of the node, such as other blocks on the page.
+When Pluto renders a node, it wraps it with <article> element with a class of .node-[content type]. There may be several nodes on a page. For example, a blog might have a view that renders complete nodes for the 5 most recent posts. For this reason, it's often more useful to use the node class (article.node-blog-post) instead of the page class (body.node-type-blog-post). This will not, however, allow you to styles elements outside of the node, such as other blocks on the page.
 
 .node-blog-post {
   .field-name-field-image {

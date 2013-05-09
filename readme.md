@@ -11,11 +11,11 @@ Pluto is designed to work with my particular coding style, and for the particula
 - 3 column layout (The regions are there, but you have to add css).
 
 ##To Do
-- define list styles in contextual/fields.less/.field-name-body
+- Document stylesheets within readme
 - Screenshot
 - logo
 - breadcrumbs
-- consider adding [shame.less file](http://csswizardry.com/2013/04/shame-css/)
+- think more about the role of global/_page-components.less. Rewrite the documentation, or possible remove the file.
 
 ##Required Modules
 - [LESS CSS Preprocessor](http://drupal.org/project/less)

@@ -1,10 +1,6 @@
 /*
-This stylesheet is only used within
-the wysiwyg editor, assuming the wysiwyg
-editor has been configured to use it.
-These styles will need to be repeated in
-another stylesheet (such as _pages-general.less)
-in order for them to affect the site. */
+This stylesheet is only used within the wysiwyg editor, assuming the wysiwyg editor has been configured to use it. These styles will need to be repeated in contextual/_fields.less in order for them to affect the front-end site.
+*/
 
 body {
   font-family: sans-serif;
