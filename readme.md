@@ -11,6 +11,7 @@ Pluto is designed to work with my particular coding style, and for the particula
 - 3 column layout (The regions are there, but you have to add css).
 
 ##To Do
+- Modernizr is not being loaded because the filename is wrong in the .info file.
 - Document stylesheets within readme
 - Screenshot
 - logo
