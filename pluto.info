@@ -1,4 +1,3 @@
-
 ; Theme Info
 name = Pluto
 description = A heavily personalized, shamelessly derivative, and delightfully minimal html5 Drupal base theme.
@@ -9,7 +8,7 @@ engine = phptemplate
 stylesheets[all][] = css/style.less
 
 ; Scripts
-scripts[] = js/libs/modernizr-2.5.3.min.js
+scripts[] = js/libs/modernizr.min.js
 scripts[] = js/scripts.js
 
 ; Regions
