@@ -8,7 +8,6 @@ engine = phptemplate
 stylesheets[all][] = css/style.less
 
 ; Scripts
-scripts[] = js/libs/modernizr.min.js
 scripts[] = js/scripts.js
 
 ; Regions
