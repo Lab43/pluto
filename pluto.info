@@ -5,7 +5,7 @@ core = 7.x
 engine = phptemplate
 
 ; Stylesheets
-stylesheets[all][] = css/style.less
+stylesheets[all][] = css/styles.css
 
 ; Scripts
 scripts[] = js/scripts.js
